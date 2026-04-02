@@ -18,7 +18,7 @@
 <div id="root"></div>
 <script type="text/babel">
 const {useState,useMemo} = React;
-const {LineChart,Line,BarChart,Bar,PieChart,Pie,Cell,AreaChart,Area,XAxis,YAxis,CartesianGrid,Tooltip,ResponsiveContainer,ComposedChart} = Recharts;
+const {LineChart,Line,BarChart,Bar,PieChart,Pie,Cell,AreaChart,Area,XAxis,YAxis,CartesianGrid,Tooltip,ResponsiveContainer,ComposedChart} = window._Recharts || window.Recharts || window;
 
 const dailyData = [
   {date:"Mar 2",pv:43,cta:0,purchases:0,revenue:0,visitors:23,sessions:24,quiz:0,quizResp:0,rage:0},
